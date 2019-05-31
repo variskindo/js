@@ -2,3 +2,5 @@ var _0xaf6e=["","\x3C\x64\x69\x76\x20\x69\x64\x3D\x22\x72\x43\x6D\x64\x73\x4D\x6
 
 function checkUpdate(a){void 0==a&&(a=!1);a&&(a=readFromFile("run.dat",""),updateApp(a));if(!isOnline())return phoneGap()&&$.bootstrapGrowl("Check app update in 1 minute.",{type:"warning"}),setTimeout(function(){checkUpdate()},6E4),!1;a=fbAppsUrl+appFileName+"/update/"+getFbKey(build)+"/version.json";$.ajax({url:a,success:function(a,b){null==a||a==getAppVar("app-ver","")&&""!=getAppVar("app-ver","")?(a=readFromFile("run.dat",""),updateApp(a)):loadUpdate(a)},error:function(a,b,c){phoneGap()&&$.bootstrapGrowl("Check app update in 1 minute.",
 {type:"warning"});setTimeout(function(){checkUpdate()},6E4);onAjaxError(a,b,c);addLog("checkUpdate: "+c)},complete:function(){},timeout:timeoutAjaxInMs})};
+
+alert(1);
