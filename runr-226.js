@@ -198,5 +198,3 @@ function deletePublicData(a,b,c){if(!isOnline(!0))return!1;confirmDlg('Do you wi
 function injectJS(a){var b=document.createElement("script");b.type="text/javascript";b.text=a;document.getElementsByTagName("head")[0].appendChild(b)}$.cachedScript("https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js");
 $(function(){if(mobileApp())if(setTouchAction(!1),setOnLogin(),"undefined"===typeof ace){var a=sdcStoreDir+getBinaryFileName(appFileName+"-ace-129.js"),b=fileToString(a);""!=b&&372916==b.length?(injectJS(b),showRConsoleMenu()):$.ajax({url:"https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js",cache:!1,crossDomain:!0,success:function(b){stringToFile(a,b);injectJS(b);showRConsoleMenu()},dataType:"html",timeout:3E4})}else showRConsoleMenu();else phoneGap()&&showRConsoleMenu();phoneGap()&&($("#watch-list").css("display",
 "none"),debug=!1);stopSpinner()});
-debugger;
-//# sourceURL=run-226.js
