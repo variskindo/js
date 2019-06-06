@@ -1,4 +1,4 @@
-[=Lang=]R Statistical Programming Languange
+[=Lang=]R Statistical Programming Languange, img/logo.png
 
 	[=Menu1=]Basics, Examples that shows the basic features of R languange
   
@@ -144,7 +144,7 @@ dotplot(results)
 # summarize Best Model
 print(fit.rf)
 
-[=Lang=]Python Programming Languange
+[=Lang=]Python Programming Languange, https://rcommand.com/img/python-64.png
 
 	[=Menu1=]Basics, Examples that shows the basic features of Python languange
   
