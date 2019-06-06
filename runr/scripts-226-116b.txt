@@ -1,6 +1,6 @@
 [=Lang=]R Scripts, img/logo.png
 
-	[=Menu1=]Basics, Examples that shows the basic features of R languange
+	[=Menu1=]Data Manipulation, Examples to manipulate data
   
 		[=Menu2=]Read Data, Examples to read and show data summary
 [=Script=]
@@ -69,7 +69,7 @@ plot4 <- ggboxplot(df, x = "Species", y = "Sepal.Length",
 grid.arrange(plot1, plot2, plot3, plot4, ncol=2)
 
 
-	[=Menu1=]Machine Learning
+	[=Menu1=]Machine Learning, Examples to validate, visualize dataset and build models
   
 		[=Menu2=]Create Validation Dataset
 [=Script=]
@@ -144,7 +144,7 @@ print(fit.rf)
 
 [=Lang=]Python Scripts, https://rcommand.com/img/python-64.png
 
-	[=Menu1=]Basics, Examples that shows the basic features of Python languange
+	[=Menu1=]Data Manipulation, Examples to manipulate data
   
 		[=Menu2=]Read Data, Examples to read and show data summary
 [=Script=]
@@ -188,7 +188,7 @@ df = pandas.read_csv("iris.csv", header=0)
 print(df[df.SepalLength > 0.5])
 print(df[df['Species'].isin(['Iris-setosa', 'Iris-virginica'])])
 
-	[=Menu1=]Machine Learning
+	[=Menu1=]Machine Learning, Examples to validate, visualize dataset and build models
   
 		[=Menu2=]Create Validation Dataset
 [=Script=]
