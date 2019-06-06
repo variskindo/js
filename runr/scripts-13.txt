@@ -74,8 +74,7 @@ grid.arrange(plot1, plot2, plot3, plot4, ncol=2)
 		[=Menu2=]Create Validation Dataset
 [=Script=]
 library(caret)
-df <- read.table("fraud.csv", sep=',', dec='.', header=T)
-df <- df[sample(1:15000, 500), ] # select 500 cases only
+df <- read.table("sample-ml.csv", sep=',', dec='.', header=T)
 # create a list of 80% of the rows in the original dataset we can use for training
 validationIndex <- createDataPartition(df$Class, p=0.80, list=FALSE) # select 20% of the data for validation
 validation <- df[-validationIndex,]
@@ -92,8 +91,7 @@ cbind(freq=table(training$Class), percentage=percentage)
 		[=Menu2=]Statistical Summary
 [=Script=]
 library(caret)
-df <- read.table("fraud.csv", sep=',', dec='.', header=T)
-df <- df[sample(1:15000, 500), ] # select 500 cases only
+df <- read.table("sample-ml.csv", sep=',', dec='.', header=T)
 # create a list of 80% of the rows in the original dataset we can use for training
 validationIndex <- createDataPartition(df$Class, p=0.80, list=FALSE) # select 20% of the data for validation
 validation <- df[-validationIndex,]
@@ -105,8 +103,7 @@ summary(training)
 		[=Menu2=]Build Models
 [=Script=]
 library(caret)
-df <- read.table("fraud.csv", sep=',', dec='.', header=T)
-df <- df[sample(1:15000, 500), ] # select 500 cases only
+df <- read.table("sample-ml.csv", sep=',', dec='.', header=T)
 df$Class = as.factor(df$Class)
 # Split out validation dataset
 # create a list of 80% of the rows in the original dataset we can use for training set.seed(7)
@@ -196,7 +193,7 @@ print(df[df['Species'].isin(['Iris-setosa', 'Iris-virginica'])])
 [=Script=]
 from pandas import read_csv
 from sklearn.model_selection import train_test_split
-filename = 'fraud.csv'
+filename = 'sample-ml.csv'
 df = read_csv(filename)
 # Split-out validation dataset
 array = df.values
@@ -213,7 +210,7 @@ print(Y_train)
 [=Script=]
 from pandas import read_csv
 from pandas.plotting import scatter_matrix
-filename = 'fraud.csv'
+filename = 'sample-ml.csv'
 df = read_csv(filename)
 # scatter plot matrix
 X = df.iloc[:, 0:round(len(df.columns)/3)]
@@ -232,7 +229,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
-filename = 'fraud.csv'
+filename = 'sample-ml.csv'
 df = read_csv(filename)
 # Split-out validation dataset
 array = df.values
