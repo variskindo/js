@@ -264,12 +264,3 @@ fig.suptitle('Algorithm Comparison')
 ax = fig.add_subplot(111)
 plt.boxplot(results)
 ax.set_xticklabels(names)
-
-	[=Menu1=]Test Menu, One level only
-[=Script=]
-import numpy as np
-from sklearn.preprocessing import LabelEncoder
-#read data
-df = pandas.read_csv("iris.csv", header=0)
-#get data types, index, columns & values
-print(df.dtypes)
