@@ -104,6 +104,7 @@ summary(training)
 [=Script=]
 library(caret)
 df <- read.table("sample-ml.csv", sep=',', dec='.', header=T)
+df <- df[sample(1:500, 250), ] # select 500 cases only
 df$Class = as.factor(df$Class)
 # Split out validation dataset
 # create a list of 80% of the rows in the original dataset we can use for training set.seed(7)
