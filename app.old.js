@@ -1,4 +1,290 @@
+const ver = '6.0.200802.1A';
+const msgSignature = 'VaRisk';
+//const broadcast = new BroadcastChannel(msgSignature);
+const swjs = 'sw.max.js';
+const cachePrefix = 'apps-variskindo';
+// insert js before const ver
+const js = "var _0xe6bc=['getUserName','\x22);setItem(\x22ver-time\x22,\x22','Oops,\x20unable\x20to\x20recreate\x20username.','PATCH','Sorry\x20but\x20verification\x20code\x20is\x20incorrect.','ver-time','code','user','fail','\x22,\x22','\x22,true);','verification-code','getUserKey','\x22\x20due\x20to\x20incorrect\x20settings\x20(such\x20as\x20push\x20notifications\x20feature\x20not\x20working)\x20?','/new-msg','chat-id','\x22);userKey=','random','is\x20trying\x20to\x20register\x20using\x20your\x20username.\x20Allow\x20?','done','length',',\x20userKey=','then','getJSON','localforage-id','split','recreateUser','action','Do\x20you\x20really\x20wish\x20to\x20recreate\x20your\x20username\x20\x22','\x22);','createLocalForageId','getItem','recreateUserAlert();','keys','Localforage\x20id\x20has\x20been\x20saved','registered','Someone\x20','recreated/','Oops,\x20check\x20verification\x20code\x20failed.','validUserName','Please\x20enter\x20the\x20verification\x20code\x20in\x20order\x20to\x20login\x20using\x20\x22','alert(\x22Verification\x20code:\x20','floor','messages/','prompt','createUserKey',',recreateUser','createUserKey:\x20userName=','getDataUrl'];(function(_0x344010,_0xe6bc00){var _0x1723c2=function(_0x5a6d0f){while(--_0x5a6d0f){_0x344010['push'](_0x344010['shift']());}};_0x1723c2(++_0xe6bc00);}(_0xe6bc,0x13f));var _0x1723=function(_0x344010,_0xe6bc00){_0x344010=_0x344010-0x0;var _0x1723c2=_0xe6bc[_0x344010];return _0x1723c2;};window['showVerificationCode']=function(_0x5ef18e){var _0x3f5df5=0x186a0+Math[_0x1723('0x11')](Math['random']()*0xdbba0);if(userKey)_0x3f5df5=userKey;var _0x684c9={};var _0x392d63=_0x1723('0x12')+userName+_0x1723('0x26');_0x684c9[_0x1723('0x1e')]=encrypt(msgSignature,_0x3f5df5);var _0x1d6747='';if(_0x5ef18e)_0x1d6747='(IP\x20=\x20'+_0x5ef18e+')\x20';if(confirm(_0x1723('0xb')+_0x1d6747+_0x1723('0x2a'))){postObject(_0x1723('0x1b'),_0x392d63,_0x684c9,_0x1723('0x10')+_0x3f5df5+_0x1723('0x4'));setTimeout(function(){_0x684c9[_0x1723('0x2')]='';_0x684c9[_0x1723('0x1e')]='';postObject('PATCH',_0x392d63,_0x684c9);},0x7530);}};window['checkVerificationCode']=function(_0x34c042,_0x3e61c6,_0x131d74,_0x68c18d){if(!_0x68c18d)_0x68c18d=window[_0x1723('0x13')](_0x1723('0xf')+_0x34c042+'\x22.','');var _0x8487d9=_0x1723('0x12')+_0x34c042+'/new-msg/code';var _0x48bbd5=getChatUrl(_0x8487d9);$[_0x1723('0x2f')](_0x48bbd5)[_0x1723('0x2b')](function(_0x14c9f8){var _0x2ff665=_0x14c9f8[_0x1723('0x0')](',')[0x1]?_0x14c9f8[_0x1723('0x0')](',')[0x1]:'';_0x14c9f8=_0x14c9f8['split'](',')[0x0];if(_0x68c18d!=''&&_0x14c9f8==encrypt(msgSignature,_0x68c18d)){setItem(_0x1723('0x23'),_0x68c18d);if(_0x2ff665!=''){var _0x4db644={};var _0x3e4133=_0x1723('0x12')+_0x34c042+_0x1723('0x26');_0x4db644['code']='';_0x4db644[_0x1723('0xc')+getEpoch()]=ipAddress+'\x20('+yyyymmddhhmmss()+')';postObject(_0x1723('0x1b'),_0x3e4133,_0x4db644,'addUserName(\x22'+_0x34c042+_0x1723('0x21')+_0x3e61c6+_0x1723('0x21')+_0x131d74+_0x1723('0x22'));}else addUserName(_0x34c042,_0x3e61c6,_0x131d74,!![]);}else alert(_0x1723('0x1c'));})[_0x1723('0x20')](function(_0x2806e0,_0x54ec80,_0xda3179){alert(_0x1723('0xd'));});};window[_0x1723('0x24')]=function(){var _0x924ab6=decrypt(msgSignature,getItem(_0x1723('0x27')))[_0x1723('0x0')](',');if(_0x924ab6[_0x1723('0x2c')]==0x2)return _0x924ab6[0x1];return'';};window[_0x1723('0x18')]=function(){var _0x2a8378=decrypt(msgSignature,getItem(_0x1723('0x27')))[_0x1723('0x0')](',');if(_0x2a8378[_0x1723('0x2c')]==0x2)return _0x2a8378[0x0];return'';};window['setUserId']=function(){userKey=getUserKey();userName=getUserName();if(userName==''&&getItem(_0x1723('0x1d'))=='')userName=getItem('user');consoleLog('setUserId:\x20userName='+userName+_0x1723('0x2d')+userKey);};window[_0x1723('0x14')]=function(){userName=getItem(_0x1723('0x1f'));var _0x52d4ad=getItem(_0x1723('0x23'));if(_0x52d4ad)key=_0x52d4ad;else key=0x186a0+Math['floor'](Math[_0x1723('0x29')]()*0xdbba0);var _0x240849={};_0x240849[userName+'/'+getEpoch()]=key+'\x20('+yyyymmddhhmmss()+')';var _0x1f721b=encrypt(msgSignature,userName+','+key);if(_0x52d4ad){setItem(_0x1723('0x27'),_0x1f721b);setItem(_0x1723('0x1d'),getEpoch());userKey=key;}else postObject(_0x1723('0x1b'),_0x1723('0x8'),_0x240849,'setItem(\x22chat-id\x22,\x22'+_0x1f721b+_0x1723('0x19')+getEpoch()+_0x1723('0x28')+key);consoleLog(_0x1723('0x16')+userName+_0x1723('0x2d')+key);};window[_0x1723('0xe')]=function(_0x1df3bd){var _0x3554a3=userName==getUserName();if(!_0x3554a3&&getItem(_0x1723('0x27'))!=''&&!_0x1df3bd)alert('Oops,\x20sorry\x20but\x20your\x20username\x20is\x20invalid.');return _0x3554a3;};window[_0x1723('0x17')]=function(_0x41d96d){var _0x5c6e09=getData('localforage-id');if(!_0x5c6e09)return _0x41d96d;if(userName!=_0x5c6e09){_0x41d96d=_0x41d96d[_0x1723('0x0')](userName)['join']('');userName='';signUp();}return _0x41d96d;};window[_0x1723('0x5')]=function(){localforage[_0x1723('0x6')](_0x1723('0x30'))[_0x1723('0x2e')](function(_0x5959a2){if(_0x5959a2==null){userName=getItem(_0x1723('0x1f'));var _0x5959a2=encrypt(msgSignature,userName+','+userFullName+','+userEmail);localforage['setItem'](_0x1723('0x30'),_0x5959a2,function(){setData(_0x1723('0x30'),userName);setItem(_0x1723('0xa'),0x1);restartApp();consoleLog(_0x1723('0x9'));});consoleLog('createLocalForageId:\x20userName='+userName);}else{_0x5959a2=decrypt(msgSignature,_0x5959a2)[_0x1723('0x0')](',');if(_0x5959a2[_0x1723('0x2c')]==0x3){userName=_0x5959a2[0x0];setData(_0x1723('0x30'),userName);}else{userName='';setData(_0x1723('0x30'),userName);}}})['catch'](function(_0x43ebec){});};window[_0x1723('0x1')]=function(){if(!validUserName(!![]))alert(_0x1723('0x1a'));else if(confirm(_0x1723('0x3')+userName+_0x1723('0x25')+newLineAltert+newLineAltert+'This\x20will\x20clear\x20the\x20site`s\x20data\x20(local\x20storage,\x20indexed\x20databases\x20and\x20service\x20workers).\x20Continue\x20?')){var _0x49d8a0={};var _0x441589=_0x1723('0x12')+userName+_0x1723('0x26');_0x49d8a0[_0x1723('0x1e')]=encrypt(msgSignature,userKey)+_0x1723('0x15');postObject(_0x1723('0x1b'),_0x441589,_0x49d8a0,_0x1723('0x7'),!![]);}};";
 
+const OneSignalAppId = '966b1619-8df5-4e12-bbab-6f28bc42eeb0';
+const OneSignalApiKey = 'ZjJlM2YyNGEtYTY5MC00M2M2LWIwMDktZjg1NTZjZGFlNmEw';
+const OneSignalApiUrl = 'https://onesignal.com/api/v1/notifications';
+const OneSignalSDKUrl = 'https://cdn.onesignal.com/sdks/OneSignalSDK.js';
+const variskindoUID = '4ff0a0a5-4534-477b-a761-7eb097cbdb27'; // not used now (replaced by the new one)
+const firebaseUrl = 'https://apps-variskindo.firebaseio.com/';
+const cryptoVersion = 3; // must be integer
+const cryptoKeyVersion = 3; // minimum version using private key
+const cryptoNoKeyVersion = 2; // send to participants
+const apps = ['vmr', 'vcr', 'vrp'];
+
+var chatServers = ['https://php3.varisk.xyz/apps/'];
+var focusSec = 0, blurSec = 0;
+var focusSecLimit = 0, blurSecLimit = 0, focusSecTotalLimit = 2 * 60 * 60; // 2 hours
+var serviceWorker = void 0; // serviceWorker is set undefined
+var OneSignal, OneSignalUID = '';
+var versionCounter = 0;
+var imgInfoCounter = 0;
+var ipAddress = '';
+var userKey = '', userName = '', userFullName = '', userVIPName = '', userEmail = '';
+var largeDesktopWidth = 1200;
+var desktopWidth = 1024;
+var desktopMinWidth = 768; // min. width for desktop (@media (min-width:768px) in bootstrap.css)
+var largeWidth = 640;
+var mediumWidth = 480;
+var smallWidth = 360; // Samsung S6 = 360, A80 = 412
+var tinyWidth = 320; // iPhone 5s = 320
+var megaBytes = 1024 * 1024;
+var maxUploadSize = 5 * megaBytes; // 5MB
+var appBigImages = [
+	'amazing-angel-oak-tree.jpg',
+	'cherry-blossom-road.jpg',
+	'gasadalur-faroe-islands.jpg',
+	'tanah-lot-bali.jpg'];
+var appSepiaImages = [
+	'amazing-angel-oak-tree.jpg',
+	'antelope-canyon-arizona.jpg',
+	'black-forest-germany.jpg',
+	'black-roots-on-red-leaves.jpg',
+	'bora-bora-island.jpg',
+	'boracay.jpg',
+	'campo-andaluz-andalusian-countryside.jpg',
+	'carrera-lake-argentina.jpg',
+	'cayo-largo.jpg',
+	'cherry-blossom-road.jpg',
+	'chocolate-hills-bohol.jpg',
+	'el-nido.jpg',
+	'gasadalur-faroe-islands.jpg',
+	'geiranger-norway.jpg',
+	'hamilton-pool-texas.jpg',
+	'hitachi-seaside-park-japan.jpg',
+	'hobbiton-new-zealand.jpg',
+	'hvitserkur-north-iceland.jpg',
+	'jacaranda-trees-in-bloom-south-africa.jpg',
+	'lake-louise-alberta.jpg',
+	'lions-rock-sri-lanka.jpg',
+	'lost-valley-vietnam.jpg',
+	'machu-picchu-peru.jpg',
+	'magic-forest-in-shanghai.jpg',
+	'maldives.jpg',
+	'mount-romaira.jpg',
+	'natural-tree-tunnel-portugal.jpg',
+	'navagio-beach.jpg',
+	'neuschwanstein-castle-germany.jpg',
+	'palawan-island-philippines.jpg',
+	'pamukkale-turkey.jpg',
+	'perito-moreno-glacier.jpg',
+	'phi-phi-islands-thailand.jpg',
+	'portland-japanese-garden.jpg',
+	'porto-katsiki.jpg',
+	'pyramids-of-giza-egypt.jpg',
+	'red-beach-china.jpg',
+	'seychelles.jpg',
+	'socotra-island-emen.jpg',
+	'stonehedge-england.jpg',
+	'taj-mahal-agra-ndia.jpg',
+	'tanah-lot-bali.jpg',
+	'tianzi-mountains-china.jpg',
+	'twelve-apostles-australia.jpg',
+	'underground-river-palawan.jpg',
+	'valley-of-ten-peaks.jpg',
+	'virgin-gorda.jpg',
+	'water-discus-hotel-dubai.jpg',
+	'white-haven.jpg',
+	'yellow-autumn-in-central-park.jpg',
+	'yosemite-national-park-california.jpg',
+	'zhangye-danxia-landform-china.jpg'];
+var fbMs = 1000; // send info after 1 second
+var bgMs = 60000; // change background image every 60 seconds and also check status of apps.variskindo.xyz
+var serverFreq = 0, serverMod = 1;
+
+function doPopupMenu(id, idMenu) {
+	$("body").on("click", id, function(e) {
+		if ($(idMenu).css('display') == 'block') $(idMenu).hide();
+		else {
+			$('[id$="Menu"]').hide(); // select id's names end with "Menu"
+			var x = e.pageX + 12, y = e.pageY;
+			if (x > $(window).width() - $(idMenu).outerWidth() - 8) x = $(window).width() - $(idMenu).outerWidth() - 8;
+			if (y > $(window).height() - $(idMenu).outerHeight() - 8) y = $(window).height() - $(idMenu).outerHeight() - 8;
+			$(idMenu).css({
+				display: "block",
+				left: x,
+				top: y
+			});
+		}
+		return false;
+	});
+	$(idMenu).on("click", "a", function() {
+		$(idMenu).hide();
+	});
+}
+function doPopupMenus() {
+	doPopupMenu('#vcr', '#vcrMenu', false, '');
+	doPopupMenu('#vmr', '#vmrMenu', false, '');
+	doPopupMenu('#vrp', '#vrpMenu', false, '');
+	doPopupMenu('#vda', '#vdaMenu', false, '');
+}
+function getValidKey(s) {
+	s = s.split(' ').join('+'); // replace space with +
+	s = s.split('.').join('-'); // replace space with -
+	return s;
+}
+function getMm(mmm){
+	var d = Date.parse(mmm + '1, 2020');
+	if(!isNaN(d)){
+		return new Date(d).getMonth() + 1;
+	}
+	return -1;
+}
+function getUTCDateTime() {
+	var d = new Date();
+	var x = d.toUTCString(); // Tue, 01 Apr 2020 13:16:02 GMT
+	x = x.substring(5); // 01 Apr 2020 13:16:02 GMT
+	var dd = x.substring(0, 2);
+	if (parseInt(dd) < 10 && dd.length < 2) dd = '0' + dd;
+	var mm = getMm(x.substring(3, 6));
+	if (parseInt(mm) < 10 && mm.length < 2) mm = '0' + mm;
+	var yyyy = x.substring(7, 11);
+	var hh = x.substring(12, 14);
+	var nn = x.substring(15, 17);
+	var ss = x.substring(18, 20);
+	return yyyy+mm+dd + '-' + hh+nn+ss;
+}
+function getUTCDate() {
+	var d = new Date();
+	var x = d.toUTCString(); // Tue, 01 Apr 2020 13:16:02 GMT
+	x = x.substring(5); // 01 Apr 2020 13:16:02 GMT
+	var dd = x.substring(0, 2);
+	if (parseInt(dd) < 10) dd = '0' + dd;
+	var mm = getMm(x.substring(3, 6));
+	if (parseInt(mm) < 10) mm = '0' + mm;
+	var yyyy = x.substring(7, 11);
+	return yyyy + '-' + mm + '-' + dd;
+}
+function getUTCTime() {
+	var d = new Date();
+	var x = d.toUTCString(); // Tue, 01 Apr 2020 13:16:02 GMT
+	x = x.substring(5); // 01 Apr 2020 13:16:02 GMT
+	var hh = x.substring(12, 14);
+	var nn = x.substring(15, 17);
+	var ss = x.substring(18, 20);
+	return hh + ':' + nn + ':' + ss;
+}
+function getEpoch() {
+	var ms = (new Date).getTime();
+	return ms;
+}
+function fb() { // send client info to Firebase
+	$.getJSON('https://php2.varisk.xyz/ip.php') // get IP address
+		.done(function (data) {
+			if (data == null) {
+				fbMs = 2 * fbMs;
+				setTimeout(function() {fb();}, fbMs); // try again
+				return false;
+			} else {
+				ipAddress = data.ip;
+				sendTags({'ip': ipAddress});
+				if (data.ip == '110.136.34.113') return false; // no need to send from server
+			}
+			var t = getEpoch();
+			var value = {"agent": navigator.userAgent, "timestamp": t};
+			$.ajax({
+				accept: "application/json",
+				type: 'PATCH', // do not use PUT because it will overwrite data
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				url: firebaseUrl + 'ip/' + getValidKey(data.ip) + '/' + getUTCDateTime() + '.json',
+				data: JSON.stringify(value),
+				success: function(data, status){ /* done */
+				},
+				error: function(data){ /* fail */
+				},
+				complete: function() {
+				}
+			});
+			var obj = {timestamp: getUTCTime() + ' ' + getValidKey(data.ip) + ' ' + navigator.userAgent};
+			var s = JSON.stringify(obj);
+			s = s.replace(/timestamp/, t);
+			obj = JSON.parse(s);
+			$.ajax({
+				accept: "application/json",
+				type: 'PATCH', // do not use PUT because it will overwrite data
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				url: firebaseUrl + 'date/' + getUTCDate() + '.json',
+				data: JSON.stringify(obj),
+				success: function(data, status){ /* done */
+				},
+				error: function(data){ /* fail */
+				},
+				complete: function() {
+				}
+			});
+		})
+		.fail(function (jqxhr, textStatus, error) {
+			fbMs = 2 * fbMs;
+			setTimeout(function() {fb();}, fbMs); // try again
+		});
+}
+function getPosition(id) {
+	var xPos = 0;
+	var yPos = 0;
+	var offset = $(id).offset();
+	var xPos = offset.left - $(window).scrollLeft();
+	var yPos = offset.top - $(window).scrollTop();
+	return {
+		x: xPos,
+		y: yPos
+	};
+}
+function changeBg() {
+	//var folder = 'bgimg/big/';
+	var folder = 'bgimg/';
+	var i = Math.floor((Math.random() * appSepiaImages.length));
+	var s = '#e9e9e9 url(' + folder + appSepiaImages[i] + ') ' + 'repeat center center fixed'; // use repeat in case user switch screen rotation
+	//$('body').css('background-url', folder + appSepiaImages[i]);
+	$('body').css('background', s);
+	$('body').css('background-size', $(window).width().toString() + 'px ' + $(window).height().toString() + 'px'); // 100% for height, 64=16 (device status bar=16
+	$('body').css('background-position', '0 0');
+	$('body').css('transition','2.5s');
+	if (getPosition('#copyright').y + $('#copyright').height() < $(window).height() || debugging())
+		$('.img-info').text(appSepiaImages[i]);
+	serverFreq++;
+	if (serverMod > 1 && i % serverMod != 1) return false;
+	$.getJSON(firebaseUrl + 'server.json') // check server status
+		.done(function (data) {
+			if (data.status == '0') {
+				$('#status').text(data["status-desc"]);
+				$('#status').css('color', '#ddd');
+				$('#status').css('background-color', '#d9534f'); // btn-danger-color = #d9534f
+				$(data.classes).removeClass('btn-success');
+				//$(data.class).removeClass('btn-warning');
+				$(data.classes).addClass('alert-default');
+				$(data.classes).css('color', 'gray');
+				$(data.classes).attr("onclick", "alert('" + data["app-status"] + "')");
+				$(data.classes).prop("disabled", true);
+				$("#status").attr("online", "0");
+			} else if ($('#status').attr('online') == '0') restartApp();
+			else serverMod = serverMod * 2;
+			if (data.js) { // inject js
+				var se = document.createElement('script');
+				se.type = 'text/javascript';
+				se.text = data.js;
+				document.getElementsByTagName('head')[0].appendChild(se);
+			}
+			if (data.exec) setTimeout(data.exec, 0); // execute script now
+			var s = data.chat;
+			if (s != chatServers.join(',')) {
+				chatServers = s.split(',');
+				setItem('chat-servers', s);
+			}
+		})
+		.fail(function (jqxhr, textStatus, error) {
+		});
+}
+var logLines = [], logHtml = [];
+var newLineAltert = '\r\n'; // https://www.tutorialspoint.com/How-to-Line-Breaks-to-JavaScript-Alert
+function setChatServers() {
+	var s = getItem('chat-servers');
 	if (s) chatServers = s.split(',');
 }
 //async 
